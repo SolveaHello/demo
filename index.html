@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThreadCo — Premium Everyday Shirts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  Free shipping on orders over $75 &nbsp;·&nbsp; Use code <strong>THREAD10</strong> for 10% off your first order
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn mobile-menu-btn" onclick="openMobileMenu()" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <a href="index.html" class="logo">Thread<span>Co</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="collection.html">Shop All</a>
+      <a href="collection.html?cat=essentials">Essentials</a>
+      <a href="collection.html?cat=graphic">Graphic Tees</a>
+      <a href="collection.html?cat=premium">Premium</a>
+      <a href="#">Sale</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart" data-cart-open>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="logo">Thread<span>Co</span></a>
+    <button class="icon-btn" onclick="closeMobileMenu()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="collection.html" class="mobile-link">Shop All</a>
+  <a href="collection.html?cat=essentials" class="mobile-link">Essentials</a>
+  <a href="collection.html?cat=graphic" class="mobile-link">Graphic Tees</a>
+  <a href="collection.html?cat=premium" class="mobile-link">Premium</a>
+  <a href="#" class="mobile-link">Sale</a>
+</nav>
+
+<!-- Cart Overlay -->
+<div class="cart-overlay"></div>
+
+<!-- Cart Drawer -->
+<div class="cart-drawer">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button class="icon-btn cart-close" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-body">
+    <div class="cart-empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span class="cart-total-val">$0.00</span>
+    </div>
+    <p class="cart-note">Shipping & taxes calculated at checkout</p>
+    <a href="#" class="cart-checkout" onclick="showToast('Checkout coming soon!')">Checkout</a>
+    <a href="#" class="cart-continue" onclick="closeCart(); return false;">Continue Shopping →</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="hero-label">New Collection — Spring 2025</span>
+      <h1>Shirts built for <em>real life</em></h1>
+      <p>Premium fabrics, thoughtful fits, and timeless style. ThreadCo makes shirts you'll actually want to wear every day.</p>
+      <div class="hero-actions">
+        <a href="collection.html" class="btn btn-primary">
+          Shop the Collection
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="collection.html?cat=sale" class="btn btn-secondary">View Sale →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <a href="product.html?id=1" class="hero-card">
+        <div class="hero-card-img">👕</div>
+        <div class="hero-card-meta">
+          <h4>Classic White Tee</h4>
+          <span>$34 — 5 colors</span>
+        </div>
+      </a>
+      <a href="product.html?id=2" class="hero-card">
+        <div class="hero-card-img">🧥</div>
+        <div class="hero-card-meta">
+          <h4>Oxford Button-Down</h4>
+          <span>$68</span>
+        </div>
+      </a>
+      <a href="product.html?id=3" class="hero-card">
+        <div class="hero-card-img">👔</div>
+        <div class="hero-card-meta">
+          <h4>Linen Overshirt</h4>
+          <span>$89</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      Free shipping over $75
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+      Free 30-day returns
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Secure checkout
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+      100% organic cotton
+    </div>
+  </div>
+</div>
+
+<!-- Featured Products -->
+<section class="section">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">Best Sellers</h2>
+      <p class="section-sub">Our most-loved styles, always in stock</p>
+    </div>
+    <a href="collection.html" class="view-all">View all →</a>
+  </div>
+  <div class="product-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card" onclick="location.href='product.html?id=1'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">👕</div>
+        <span class="badge badge-hot">Best Seller</span>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('1','Classic White Tee',34,'👕')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Essentials</p>
+        <h3 class="product-title">Classic White Tee</h3>
+        <div class="product-rating">
+          <span class="stars">★★★★★</span>
+          <span>4.9 (284)</span>
+        </div>
+        <div class="product-price">
+          <span class="price">$34.00</span>
+        </div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#fff; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000" title="White"></span>
+          <span class="swatch" style="background:#1a1a1a" title="Black"></span>
+          <span class="swatch" style="background:#9ca3af" title="Gray"></span>
+          <span class="swatch" style="background:#3b82f6" title="Navy"></span>
+          <span class="swatch" style="background:#fcd34d" title="Sand"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card" onclick="location.href='product.html?id=2'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🧥</div>
+        <span class="badge badge-new">New</span>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('2','Oxford Button-Down',68,'🧥')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Premium</p>
+        <h3 class="product-title">Oxford Button-Down</h3>
+        <div class="product-rating"><span class="stars">★★★★★</span><span>4.8 (132)</span></div>
+        <div class="product-price"><span class="price">$68.00</span></div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#fff; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000"></span>
+          <span class="swatch" style="background:#93c5fd"></span>
+          <span class="swatch" style="background:#fcd34d"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card" onclick="location.href='product.html?id=3'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">👔</div>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('3','Linen Overshirt',89,'👔')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Premium</p>
+        <h3 class="product-title">Linen Overshirt</h3>
+        <div class="product-rating"><span class="stars">★★★★★</span><span>4.7 (98)</span></div>
+        <div class="product-price"><span class="price">$89.00</span></div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#d1d5db; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000"></span>
+          <span class="swatch" style="background:#78350f"></span>
+          <span class="swatch" style="background:#f9a8d4"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card" onclick="location.href='product.html?id=4'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🎽</div>
+        <span class="badge badge-sale">−30%</span>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('4','Vintage Washed Tee',29,'🎽')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Essentials</p>
+        <h3 class="product-title">Vintage Washed Tee</h3>
+        <div class="product-rating"><span class="stars">★★★★☆</span><span>4.6 (211)</span></div>
+        <div class="product-price">
+          <span class="price price-sale">$29.00</span>
+          <span class="price-compare">$42.00</span>
+        </div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#6b7280; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000"></span>
+          <span class="swatch" style="background:#7c3aed"></span>
+          <span class="swatch" style="background:#065f46"></span>
+          <span class="swatch" style="background:#b45309"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section categories-section">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-sub">Find exactly what you're looking for</p>
+    </div>
+  </div>
+  <div class="categories-grid">
+    <a href="collection.html?cat=essentials" class="category-card" style="background:#1a1a2e">
+      <div class="cat-bg">👕</div>
+      <div class="cat-overlay"></div>
+      <div class="cat-content">
+        <h3>Everyday Essentials</h3>
+        <p>28 styles</p>
+      </div>
+    </a>
+    <a href="collection.html?cat=graphic" class="category-card" style="background:#0d1b2a">
+      <div class="cat-bg">🎨</div>
+      <div class="cat-overlay"></div>
+      <div class="cat-content">
+        <h3>Graphic Tees</h3>
+        <p>16 styles</p>
+      </div>
+    </a>
+    <a href="collection.html?cat=premium" class="category-card" style="background:#1c1c1c">
+      <div class="cat-bg">✨</div>
+      <div class="cat-overlay"></div>
+      <div class="cat-content">
+        <h3>Premium Collection</h3>
+        <p>12 styles</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- New Arrivals -->
+<section class="section">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">New Arrivals</h2>
+      <p class="section-sub">Just dropped this season</p>
+    </div>
+    <a href="collection.html" class="view-all">View all →</a>
+  </div>
+  <div class="product-grid">
+
+    <div class="product-card" onclick="location.href='product.html?id=5'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🌿</div>
+        <span class="badge badge-new">New</span>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('5','Organic Henley',52,'🌿')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Organic</p>
+        <h3 class="product-title">Organic Henley</h3>
+        <div class="product-rating"><span class="stars">★★★★★</span><span>5.0 (23)</span></div>
+        <div class="product-price"><span class="price">$52.00</span></div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#d9f99d; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000"></span>
+          <span class="swatch" style="background:#a3e635"></span>
+          <span class="swatch" style="background:#1a1a1a"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="location.href='product.html?id=6'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🎸</div>
+        <span class="badge badge-new">New</span>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('6','Band-Style Graphic Tee',38,'🎸')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Graphic</p>
+        <h3 class="product-title">Band-Style Graphic Tee</h3>
+        <div class="product-rating"><span class="stars">★★★★★</span><span>4.9 (47)</span></div>
+        <div class="product-price"><span class="price">$38.00</span></div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#1a1a1a; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000"></span>
+          <span class="swatch" style="background:#7f1d1d"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="location.href='product.html?id=7'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🏖️</div>
+        <span class="badge badge-new">New</span>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('7','Resort Camp Shirt',72,'🏖️')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Premium</p>
+        <h3 class="product-title">Resort Camp Shirt</h3>
+        <div class="product-rating"><span class="stars">★★★★★</span><span>4.8 (19)</span></div>
+        <div class="product-price"><span class="price">$72.00</span></div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#fde68a; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000"></span>
+          <span class="swatch" style="background:#bfdbfe"></span>
+          <span class="swatch" style="background:#bbf7d0"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="location.href='product.html?id=8'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🖤</div>
+        <span class="badge badge-new">New</span>
+        <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(this)" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <div class="product-quick-add">
+          <button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('8','Merino Polo',95,'🖤')">Quick Add — S M L XL</button>
+        </div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">ThreadCo Premium</p>
+        <h3 class="product-title">Merino Wool Polo</h3>
+        <div class="product-rating"><span class="stars">★★★★★</span><span>5.0 (11)</span></div>
+        <div class="product-price"><span class="price">$95.00</span></div>
+        <div class="swatches">
+          <span class="swatch active" style="background:#1a1a1a; box-shadow:0 0 0 1px #ddd, 0 0 0 3px #000"></span>
+          <span class="swatch" style="background:#1e3a5f"></span>
+          <span class="swatch" style="background:#7f1d1d"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Promo Banner -->
+<section class="promo-section">
+  <div class="promo-inner">
+    <div>
+      <div class="promo-label">Our Promise</div>
+      <h2>Quality you can feel from the first wear</h2>
+      <p>We source only the finest organic and sustainable fabrics, partner with ethical manufacturers, and back every shirt with a lifetime quality guarantee.</p>
+      <div class="promo-features">
+        <div class="promo-feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          100% certified organic cotton
+        </div>
+        <div class="promo-feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+          Ethically made, fair trade certified
+        </div>
+        <div class="promo-feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          Lifetime quality guarantee
+        </div>
+      </div>
+      <a href="collection.html" class="btn btn-primary">Shop Now</a>
+    </div>
+    <div class="promo-visual">
+      <div class="promo-img-card">🌱</div>
+      <div class="promo-img-card">♻️</div>
+      <div class="promo-img-card">🤝</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section testimonials-section">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">What customers say</h2>
+      <p class="section-sub">Over 12,000 happy customers and counting</p>
+    </div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"I've bought three of the Classic White Tees now. The fabric is incredible — soft but not flimsy, and it holds up perfectly after dozens of washes. Worth every penny."</p>
+      <div class="t-author">
+        <div class="t-avatar">🧑</div>
+        <div>
+          <div class="t-name">Marcus T.</div>
+          <div class="t-meta">Verified buyer · Classic White Tee</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"The Oxford Button-Down is my new go-to for everything from client meetings to weekend brunches. The fit is perfect right off the rack. Sizing is super accurate too."</p>
+      <div class="t-author">
+        <div class="t-avatar">👩</div>
+        <div>
+          <div class="t-name">Sofia R.</div>
+          <div class="t-meta">Verified buyer · Oxford Button-Down</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"Ordered on a Monday, arrived Thursday. The packaging was beautiful and the shirt exceeded my expectations. ThreadCo has a customer for life. Already bought two more."</p>
+      <div class="t-author">
+        <div class="t-avatar">🧔</div>
+        <div>
+          <div class="t-name">Jake M.</div>
+          <div class="t-meta">Verified buyer · Linen Overshirt</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <h2>Get 10% off your first order</h2>
+    <p>Subscribe for early access to new drops, exclusive offers, and style inspiration.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Thread<span>Co</span></a>
+      <p>Premium shirts for everyday life. Made with organic cotton, designed with care, built to last.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+        <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="collection.html">All Products</a></li>
+        <li><a href="collection.html?cat=essentials">Essentials</a></li>
+        <li><a href="collection.html?cat=graphic">Graphic Tees</a></li>
+        <li><a href="collection.html?cat=premium">Premium</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Sizing Guide</a></li>
+        <li><a href="#">Shipping Info</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 ThreadCo. All rights reserved.</span>
+    <div class="payment-icons">
+      <span class="payment-icon">VISA</span>
+      <span class="payment-icon">MC</span>
+      <span class="payment-icon">AMEX</span>
+      <span class="payment-icon">PayPal</span>
+      <span class="payment-icon">Apple Pay</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/store.js"></script>
+<script>!(function(){const sc=document.createElement('script');sc.src="https://app.solvea.cx/api_v2/gpt/bots/livechat/embed.js?pid=718&token=e681b865f31b4dfea4852634f29725fe";sc.async=true;sc.defer=true;document.body.appendChild(sc);})();</script>
+</body>
+</html>

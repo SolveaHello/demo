@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic White Tee — ThreadCo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  Free shipping on orders over $75 &nbsp;·&nbsp; Use code <strong>THREAD10</strong> for 10% off your first order
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn mobile-menu-btn" onclick="openMobileMenu()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <a href="index.html" class="logo">Thread<span>Co</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="collection.html" class="active">Shop All</a>
+      <a href="collection.html?cat=essentials">Essentials</a>
+      <a href="collection.html?cat=graphic">Graphic Tees</a>
+      <a href="collection.html?cat=premium">Premium</a>
+      <a href="#">Sale</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart" data-cart-open>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="logo">Thread<span>Co</span></a>
+    <button class="icon-btn" onclick="closeMobileMenu()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <a href="index.html" class="mobile-link">Home</a>
+  <a href="collection.html" class="mobile-link">Shop All</a>
+  <a href="collection.html?cat=essentials" class="mobile-link">Essentials</a>
+  <a href="collection.html?cat=graphic" class="mobile-link">Graphic Tees</a>
+  <a href="collection.html?cat=premium" class="mobile-link">Premium</a>
+</nav>
+
+<!-- Cart Overlay -->
+<div class="cart-overlay"></div>
+
+<!-- Cart Drawer -->
+<div class="cart-drawer">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button class="icon-btn cart-close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-body"></div>
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span class="cart-total-val">$0.00</span>
+    </div>
+    <p class="cart-note">Shipping & taxes calculated at checkout</p>
+    <a href="#" class="cart-checkout" onclick="showToast('Checkout coming soon!')">Checkout</a>
+    <a href="#" class="cart-continue" onclick="closeCart(); return false;">Continue Shopping →</a>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<div style="padding: 16px 24px; max-width:1280px; margin:0 auto;">
+  <div class="breadcrumb" style="color:var(--gray-400); font-size:13px;">
+    <a href="index.html" style="color:var(--gray-600)">Home</a> /
+    <a href="collection.html" style="color:var(--gray-600)">All Shirts</a> /
+    Classic White Tee
+  </div>
+</div>
+
+<!-- Product Page -->
+<div class="product-page">
+
+  <!-- Gallery -->
+  <div class="product-gallery">
+    <div class="product-main-img" id="main-img">👕</div>
+    <div class="product-thumbs">
+      <div class="product-thumb active" onclick="selectThumb(this, '👕')">👕</div>
+      <div class="product-thumb" onclick="selectThumb(this, '👚')">👚</div>
+      <div class="product-thumb" onclick="selectThumb(this, '🎽')">🎽</div>
+      <div class="product-thumb" onclick="selectThumb(this, '🧵')">🧵</div>
+    </div>
+  </div>
+
+  <!-- Info -->
+  <div class="product-info">
+    <div class="product-info-vendor">ThreadCo Essentials</div>
+    <h1 id="product-name">Classic White Tee</h1>
+
+    <div class="product-info-rating">
+      <span class="stars" style="color:#f59e0b">★★★★★</span>
+      <span class="rating-count">4.9 out of 5 · <a href="#reviews" style="color:var(--accent)">284 reviews</a></span>
+    </div>
+
+    <div class="product-info-price">
+      <span id="product-price">$34.00</span>
+    </div>
+
+    <p class="product-description">
+      Our most beloved everyday tee. Cut from 100% GOTS-certified organic cotton with a perfect medium weight (180gsm) — substantial enough to drape well, light enough for all-day comfort. Pre-washed so it stays true to size and softens beautifully over time.
+    </p>
+
+    <!-- Color -->
+    <div class="variant-section">
+      <p class="variant-label">Color: <span id="selected-color">White</span></p>
+      <div class="color-list">
+        <span class="color-option selected" style="background:#f9f9f9; box-shadow:0 0 0 1.5px #ddd" title="White"
+          onclick="selectColor(this, 'White')"></span>
+        <span class="color-option" style="background:#1a1a1a" title="Black"
+          onclick="selectColor(this, 'Black')"></span>
+        <span class="color-option" style="background:#9ca3af" title="Heather Gray"
+          onclick="selectColor(this, 'Heather Gray')"></span>
+        <span class="color-option" style="background:#1e3a5f" title="Navy"
+          onclick="selectColor(this, 'Navy')"></span>
+        <span class="color-option" style="background:#fcd34d" title="Sand"
+          onclick="selectColor(this, 'Sand')"></span>
+      </div>
+    </div>
+
+    <!-- Size -->
+    <div class="variant-section">
+      <p class="variant-label">Size: <span id="selected-size">—</span> &nbsp;<a href="#" style="font-size:12px; color:var(--accent); font-weight:400">Size guide</a></p>
+      <div class="size-grid">
+        <div class="size-option" onclick="selectSize(this, 'XS')">XS</div>
+        <div class="size-option" onclick="selectSize(this, 'S')">S</div>
+        <div class="size-option" onclick="selectSize(this, 'M')">M</div>
+        <div class="size-option" onclick="selectSize(this, 'L')">L</div>
+        <div class="size-option" onclick="selectSize(this, 'XL')">XL</div>
+        <div class="size-option sold-out" title="Sold out">XXL</div>
+      </div>
+    </div>
+
+    <!-- Qty + ATC -->
+    <div class="qty-row">
+      <div class="qty-picker">
+        <button onclick="changeQty(-1)">−</button>
+        <span id="qty-val">1</span>
+        <button onclick="changeQty(1)">+</button>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCartFromPage()">Add to Cart</button>
+    </div>
+    <button class="buy-now-btn" onclick="addToCartFromPage(); showToast('Redirecting to checkout...')">Buy It Now</button>
+
+    <!-- Product meta -->
+    <div class="product-meta-row">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Free shipping over $75
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+        Free 30-day returns
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Lifetime guarantee
+      </span>
+    </div>
+
+    <!-- Details accordion -->
+    <div style="margin-top: 28px; border-top: 1px solid var(--gray-200);">
+      <details style="border-bottom: 1px solid var(--gray-200);">
+        <summary style="padding: 16px 0; font-size:14px; font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          Product Details
+          <span>+</span>
+        </summary>
+        <div style="padding: 0 0 16px; font-size:14px; color:var(--gray-600); line-height:1.7;">
+          <ul style="list-style:disc; padding-left:20px; display:flex; flex-direction:column; gap:6px;">
+            <li>100% GOTS-certified organic cotton</li>
+            <li>180gsm medium weight jersey</li>
+            <li>Crew neck with reinforced stitching</li>
+            <li>Pre-washed for minimal shrink</li>
+            <li>Regular fit — true to size</li>
+            <li>Model is 6'0" wearing size L</li>
+          </ul>
+        </div>
+      </details>
+      <details style="border-bottom: 1px solid var(--gray-200);">
+        <summary style="padding: 16px 0; font-size:14px; font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          Care Instructions
+          <span>+</span>
+        </summary>
+        <div style="padding: 0 0 16px; font-size:14px; color:var(--gray-600); line-height:1.7;">
+          Machine wash cold on gentle cycle. Tumble dry low. Do not bleach. Iron on low if needed.
+        </div>
+      </details>
+      <details>
+        <summary style="padding: 16px 0; font-size:14px; font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+          Shipping & Returns
+          <span>+</span>
+        </summary>
+        <div style="padding: 0 0 16px; font-size:14px; color:var(--gray-600); line-height:1.7;">
+          Standard shipping (3–5 days): Free over $75, otherwise $5.99.<br/>
+          Express shipping (1–2 days): $12.99.<br/>
+          Free returns within 30 days. Items must be unworn and unwashed.
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+
+<!-- You May Also Like -->
+<section class="section" style="padding-top: 0;">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">You May Also Like</h2>
+    </div>
+    <a href="collection.html" class="view-all">View all →</a>
+  </div>
+  <div class="product-grid">
+    <div class="product-card" onclick="location.href='product.html?id=2'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🧥</div>
+        <span class="badge badge-new">New</span>
+        <div class="product-quick-add"><button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('2','Oxford Button-Down',68,'🧥')">Quick Add</button></div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">Premium</p>
+        <h3 class="product-title">Oxford Button-Down</h3>
+        <div class="product-price"><span class="price">$68.00</span></div>
+      </div>
+    </div>
+    <div class="product-card" onclick="location.href='product.html?id=5'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🌿</div>
+        <div class="product-quick-add"><button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('5','Organic Henley',52,'🌿')">Quick Add</button></div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">Organic</p>
+        <h3 class="product-title">Organic Henley</h3>
+        <div class="product-price"><span class="price">$52.00</span></div>
+      </div>
+    </div>
+    <div class="product-card" onclick="location.href='product.html?id=4'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🎽</div>
+        <span class="badge badge-sale">−30%</span>
+        <div class="product-quick-add"><button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('4','Vintage Washed Tee',29,'🎽')">Quick Add</button></div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">Essentials</p>
+        <h3 class="product-title">Vintage Washed Tee</h3>
+        <div class="product-price"><span class="price price-sale">$29.00</span><span class="price-compare">$42.00</span></div>
+      </div>
+    </div>
+    <div class="product-card" onclick="location.href='product.html?id=9'">
+      <div class="product-card-img-wrap">
+        <div class="product-placeholder">🌊</div>
+        <div class="product-quick-add"><button class="quick-add-btn" onclick="event.stopPropagation(); quickAdd('9','Striped Crew Tee',44,'🌊')">Quick Add</button></div>
+      </div>
+      <div class="product-card-info">
+        <p class="product-vendor">Essentials</p>
+        <h3 class="product-title">Striped Crew Tee</h3>
+        <div class="product-price"><span class="price">$44.00</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="section testimonials-section" style="padding-top: 0;">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">Customer Reviews</h2>
+      <p class="section-sub">4.9 out of 5 — based on 284 reviews</p>
+    </div>
+    <button class="btn btn-outline" onclick="showToast('Review form coming soon!')">Write a Review</button>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"I've bought three of these now. The fabric is incredible — soft but not flimsy. Holds up perfectly after dozens of washes. This is the only white tee I'll ever buy again."</p>
+      <div class="t-author">
+        <div class="t-avatar">🧑</div>
+        <div><div class="t-name">Marcus T.</div><div class="t-meta">Verified buyer · Size L</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"Perfect fit, perfect weight. I ordered M and it fits exactly as described. The organic cotton feels noticeably nicer than regular cotton tees."</p>
+      <div class="t-author">
+        <div class="t-avatar">👩</div>
+        <div><div class="t-name">Anna K.</div><div class="t-meta">Verified buyer · Size S</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"Ordered for the whole family. Everyone loves them. The sizing guide is accurate and shipping was really fast. Will definitely reorder."</p>
+      <div class="t-author">
+        <div class="t-avatar">🧔</div>
+        <div><div class="t-name">Jake M.</div><div class="t-meta">Verified buyer · Size XL</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Thread<span>Co</span></a>
+      <p>Premium shirts for everyday life. Made with organic cotton, designed with care, built to last.</p>
+      <div class="social-links">
+        <a href="#" class="social-link">📷</a>
+        <a href="#" class="social-link">🐦</a>
+        <a href="#" class="social-link">🎵</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="collection.html">All Products</a></li>
+        <li><a href="collection.html?cat=essentials">Essentials</a></li>
+        <li><a href="#">Graphic Tees</a></li>
+        <li><a href="#">Premium</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Sizing Guide</a></li>
+        <li><a href="#">Shipping Info</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 ThreadCo. All rights reserved.</span>
+    <div class="payment-icons">
+      <span class="payment-icon">VISA</span>
+      <span class="payment-icon">MC</span>
+      <span class="payment-icon">AMEX</span>
+      <span class="payment-icon">PayPal</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/store.js"></script>
+<script>!(function(){const sc=document.createElement('script');sc.src="https://app.solvea.cx/api_v2/gpt/bots/livechat/embed.js?pid=718&token=e681b865f31b4dfea4852634f29725fe";sc.async=true;sc.defer=true;document.body.appendChild(sc);})();</script>
+<script>
+  // Products data (for dynamic loading based on URL param)
+  const PRODUCTS = {
+    '1': { title: 'Classic White Tee', price: 34, emoji: '👕', vendor: 'ThreadCo Essentials' },
+    '2': { title: 'Oxford Button-Down', price: 68, emoji: '🧥', vendor: 'ThreadCo Premium' },
+    '3': { title: 'Linen Overshirt', price: 89, emoji: '👔', vendor: 'ThreadCo Premium' },
+    '4': { title: 'Vintage Washed Tee', price: 29, emoji: '🎽', vendor: 'ThreadCo Essentials' },
+    '5': { title: 'Organic Henley', price: 52, emoji: '🌿', vendor: 'ThreadCo Organic' },
+    '6': { title: 'Band-Style Graphic Tee', price: 38, emoji: '🎸', vendor: 'ThreadCo Graphic' },
+    '7': { title: 'Resort Camp Shirt', price: 72, emoji: '🏖️', vendor: 'ThreadCo Premium' },
+    '8': { title: 'Merino Wool Polo', price: 95, emoji: '🖤', vendor: 'ThreadCo Premium' },
+    '9': { title: 'Striped Crew Tee', price: 44, emoji: '🌊', vendor: 'ThreadCo Essentials' },
+  };
+
+  // Load product from URL param
+  const params = new URLSearchParams(window.location.search);
+  const pid = params.get('id') || '1';
+  const p = PRODUCTS[pid] || PRODUCTS['1'];
+  document.querySelector('#product-name').textContent = p.title;
+  document.querySelector('#product-price').textContent = `$${p.price}.00`;
+  document.querySelector('#main-img').textContent = p.emoji;
+  document.querySelector('.product-info-vendor').textContent = p.vendor;
+  document.title = `${p.title} — ThreadCo`;
+  document.querySelectorAll('.product-thumb')[0].textContent = p.emoji;
+
+  let selectedSize = '';
+  let selectedColor = 'White';
+  let qty = 1;
+
+  function selectSize(el, size) {
+    document.querySelectorAll('.size-option').forEach(s => s.classList.remove('selected'));
+    el.classList.add('selected');
+    selectedSize = size;
+    document.getElementById('selected-size').textContent = size;
+  }
+
+  function selectColor(el, color) {
+    document.querySelectorAll('.color-option').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    selectedColor = color;
+    document.getElementById('selected-color').textContent = color;
+  }
+
+  function changeQty(delta) {
+    qty = Math.max(1, qty + delta);
+    document.getElementById('qty-val').textContent = qty;
+  }
+
+  function selectThumb(el, emoji) {
+    document.querySelectorAll('.product-thumb').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById('main-img').textContent = emoji;
+  }
+
+  function addToCartFromPage() {
+    if (!selectedSize) {
+      showToast('Please select a size');
+      return;
+    }
+    cart.add({
+      id: pid,
+      title: p.title,
+      price: p.price,
+      emoji: p.emoji,
+      size: selectedSize,
+      color: selectedColor,
+      qty: qty
+    });
+  }
+</script>
+</body>
+</html>
