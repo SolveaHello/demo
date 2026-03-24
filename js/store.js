@@ -2,6 +2,48 @@
    THREADCO — Store JS
    ============================================ */
 
+// Product image map (Unsplash, free to use)
+const PRODUCT_IMAGES = {
+  '1': [
+    'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=800&fit=crop'
+  ],
+  '2': [
+    'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=600&h=800&fit=crop'
+  ],
+  '3': [
+    'https://images.unsplash.com/photo-1594938298603-c8148c4b4ae3?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1602810316693-3667c854239a?w=600&h=800&fit=crop'
+  ],
+  '4': [
+    'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?w=600&h=800&fit=crop'
+  ],
+  '5': [
+    'https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1618354691229-88d47f285158?w=600&h=800&fit=crop'
+  ],
+  '6': [
+    'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1503342394128-c104d54dba01?w=600&h=800&fit=crop'
+  ],
+  '7': [
+    'https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1591195853828-11db59a44f43?w=600&h=800&fit=crop'
+  ],
+  '8': [
+    'https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&h=800&fit=crop'
+  ],
+  '9': [
+    'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&h=800&fit=crop'
+  ]
+};
+
 // --- Cart State ---
 const cart = {
   items: JSON.parse(localStorage.getItem('tc_cart') || '[]'),
@@ -132,8 +174,26 @@ function toggleWishlist(btn) {
   showToast(txt);
 }
 
+// --- Swap emoji placeholders with real product images ---
+function initProductImages() {
+  document.querySelectorAll('[data-product-id]').forEach(card => {
+    const pid = card.dataset.productId;
+    const imgs = PRODUCT_IMAGES[pid];
+    if (!imgs || !imgs[0]) return;
+    const placeholder = card.querySelector('.product-placeholder');
+    if (placeholder) {
+      const img = document.createElement('img');
+      img.src = imgs[0];
+      img.alt = card.dataset.productTitle || '';
+      img.loading = 'lazy';
+      placeholder.replaceWith(img);
+    }
+  });
+}
+
 // --- Init on DOM ready ---
 document.addEventListener('DOMContentLoaded', () => {
+  initProductImages();
   updateCartCount();
   renderCart();
 

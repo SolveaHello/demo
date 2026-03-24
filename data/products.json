@@ -1,0 +1,341 @@
+{
+  "products": [
+    {
+      "id": 1001,
+      "handle": "classic-white-tee",
+      "title": "Classic White Tee",
+      "vendor": "ThreadCo Essentials",
+      "product_type": "T-Shirt",
+      "tags": ["essentials", "organic", "bestseller", "crew-neck"],
+      "status": "active",
+      "published_at": "2024-09-01T00:00:00Z",
+      "created_at": "2024-08-15T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "Our most beloved everyday tee. Cut from 100% GOTS-certified organic cotton with a perfect medium weight (180gsm) — substantial enough to drape well, light enough for all-day comfort. Pre-washed so it stays true to size and softens beautifully over time.",
+      "price": "34.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 101, "position": 1, "src": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=800&fit=crop", "alt": "Classic White Tee front" },
+        { "id": 102, "position": 2, "src": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=600&h=800&fit=crop", "alt": "Classic White Tee back" }
+      ],
+      "options": [
+        { "id": 1, "name": "Color", "position": 1, "values": ["White", "Black", "Heather Gray", "Navy", "Sand"] },
+        { "id": 2, "name": "Size",  "position": 2, "values": ["XS", "S", "M", "L", "XL"] }
+      ],
+      "variants": [
+        { "id": 10011, "title": "White / XS", "option1": "White", "option2": "XS", "price": "34.00", "compare_at_price": null, "sku": "TCE-WT-XS", "inventory_quantity": 34, "available": true },
+        { "id": 10012, "title": "White / S",  "option1": "White", "option2": "S",  "price": "34.00", "compare_at_price": null, "sku": "TCE-WT-S",  "inventory_quantity": 58, "available": true },
+        { "id": 10013, "title": "White / M",  "option1": "White", "option2": "M",  "price": "34.00", "compare_at_price": null, "sku": "TCE-WT-M",  "inventory_quantity": 72, "available": true },
+        { "id": 10014, "title": "White / L",  "option1": "White", "option2": "L",  "price": "34.00", "compare_at_price": null, "sku": "TCE-WT-L",  "inventory_quantity": 61, "available": true },
+        { "id": 10015, "title": "White / XL", "option1": "White", "option2": "XL", "price": "34.00", "compare_at_price": null, "sku": "TCE-WT-XL", "inventory_quantity": 29, "available": true },
+        { "id": 10021, "title": "Black / XS", "option1": "Black", "option2": "XS", "price": "34.00", "compare_at_price": null, "sku": "TCE-BK-XS", "inventory_quantity": 22, "available": true },
+        { "id": 10022, "title": "Black / S",  "option1": "Black", "option2": "S",  "price": "34.00", "compare_at_price": null, "sku": "TCE-BK-S",  "inventory_quantity": 45, "available": true },
+        { "id": 10023, "title": "Black / M",  "option1": "Black", "option2": "M",  "price": "34.00", "compare_at_price": null, "sku": "TCE-BK-M",  "inventory_quantity": 53, "available": true },
+        { "id": 10024, "title": "Black / L",  "option1": "Black", "option2": "L",  "price": "34.00", "compare_at_price": null, "sku": "TCE-BK-L",  "inventory_quantity": 48, "available": true },
+        { "id": 10025, "title": "Black / XL", "option1": "Black", "option2": "XL", "price": "34.00", "compare_at_price": null, "sku": "TCE-BK-XL", "inventory_quantity": 17, "available": true }
+      ],
+      "metafields": {
+        "material": "100% GOTS-certified organic cotton",
+        "weight_gsm": 180,
+        "fit": "Regular",
+        "care": "Machine wash cold, tumble dry low",
+        "sustainability": "GOTS certified, fair trade",
+        "reviews_count": 284,
+        "reviews_rating": 4.9
+      }
+    },
+    {
+      "id": 1002,
+      "handle": "oxford-button-down",
+      "title": "Oxford Button-Down",
+      "vendor": "ThreadCo Premium",
+      "product_type": "Shirt",
+      "tags": ["premium", "new", "oxford", "button-down", "formal-casual"],
+      "status": "active",
+      "published_at": "2025-01-10T00:00:00Z",
+      "created_at": "2024-12-20T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "A refined everyday button-down woven from 100% organic Oxford cotton. Structured enough for client meetings, relaxed enough for weekend brunches. Features a button-down collar, single chest pocket, and a clean straight hem.",
+      "price": "68.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 201, "position": 1, "src": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=800&fit=crop", "alt": "Oxford Button-Down front" },
+        { "id": 202, "position": 2, "src": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=600&h=800&fit=crop", "alt": "Oxford Button-Down detail" }
+      ],
+      "options": [
+        { "id": 3, "name": "Color", "position": 1, "values": ["White", "Sky Blue", "Sand Yellow"] },
+        { "id": 4, "name": "Size",  "position": 2, "values": ["XS", "S", "M", "L", "XL", "XXL"] }
+      ],
+      "variants": [
+        { "id": 10031, "title": "White / S",  "option1": "White", "option2": "S",  "price": "68.00", "sku": "TCP-OXF-WT-S",  "inventory_quantity": 24, "available": true },
+        { "id": 10032, "title": "White / M",  "option1": "White", "option2": "M",  "price": "68.00", "sku": "TCP-OXF-WT-M",  "inventory_quantity": 31, "available": true },
+        { "id": 10033, "title": "White / L",  "option1": "White", "option2": "L",  "price": "68.00", "sku": "TCP-OXF-WT-L",  "inventory_quantity": 28, "available": true },
+        { "id": 10034, "title": "White / XL", "option1": "White", "option2": "XL", "price": "68.00", "sku": "TCP-OXF-WT-XL", "inventory_quantity": 15, "available": true }
+      ],
+      "metafields": {
+        "material": "100% organic Oxford weave cotton",
+        "fit": "Relaxed",
+        "care": "Machine wash cold, hang dry",
+        "sustainability": "GOTS certified",
+        "reviews_count": 132,
+        "reviews_rating": 4.8
+      }
+    },
+    {
+      "id": 1003,
+      "handle": "linen-overshirt",
+      "title": "Linen Overshirt",
+      "vendor": "ThreadCo Premium",
+      "product_type": "Overshirt",
+      "tags": ["premium", "linen", "layering", "summer"],
+      "status": "active",
+      "published_at": "2024-11-01T00:00:00Z",
+      "created_at": "2024-10-15T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "A relaxed, lived-in linen overshirt designed for effortless layering. Crafted from 100% European linen that softens with every wash. Wear it open over a tee or buttoned as a standalone shirt.",
+      "price": "89.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 301, "position": 1, "src": "https://images.unsplash.com/photo-1594938298603-c8148c4b4ae3?w=600&h=800&fit=crop", "alt": "Linen Overshirt front" }
+      ],
+      "options": [
+        { "id": 5, "name": "Color", "position": 1, "values": ["Stone Gray", "Warm Brown", "Blush Pink"] },
+        { "id": 6, "name": "Size",  "position": 2, "values": ["S", "M", "L", "XL"] }
+      ],
+      "variants": [
+        { "id": 10041, "title": "Stone Gray / S", "option1": "Stone Gray", "option2": "S", "price": "89.00", "sku": "TCP-LIN-SG-S", "inventory_quantity": 18, "available": true },
+        { "id": 10042, "title": "Stone Gray / M", "option1": "Stone Gray", "option2": "M", "price": "89.00", "sku": "TCP-LIN-SG-M", "inventory_quantity": 22, "available": true },
+        { "id": 10043, "title": "Stone Gray / L", "option1": "Stone Gray", "option2": "L", "price": "89.00", "sku": "TCP-LIN-SG-L", "inventory_quantity": 19, "available": true }
+      ],
+      "metafields": {
+        "material": "100% European linen",
+        "fit": "Relaxed / Oversized",
+        "care": "Machine wash cold, line dry",
+        "reviews_count": 98,
+        "reviews_rating": 4.7
+      }
+    },
+    {
+      "id": 1004,
+      "handle": "vintage-washed-tee",
+      "title": "Vintage Washed Tee",
+      "vendor": "ThreadCo Essentials",
+      "product_type": "T-Shirt",
+      "tags": ["essentials", "sale", "vintage", "washed"],
+      "status": "active",
+      "published_at": "2024-07-01T00:00:00Z",
+      "created_at": "2024-06-10T00:00:00Z",
+      "updated_at": "2025-02-14T00:00:00Z",
+      "description": "Garment-dyed for a broken-in, worn-from-day-one feel. Each tee is individually washed giving subtle tonal variation — no two are exactly alike. Slightly boxy fit.",
+      "price": "29.00",
+      "compare_at_price": "42.00",
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 401, "position": 1, "src": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=800&fit=crop", "alt": "Vintage Washed Tee" }
+      ],
+      "options": [
+        { "id": 7, "name": "Color", "position": 1, "values": ["Slate Gray", "Faded Purple", "Forest Green", "Rust Brown"] },
+        { "id": 8, "name": "Size",  "position": 2, "values": ["XS", "S", "M", "L", "XL", "XXL"] }
+      ],
+      "variants": [
+        { "id": 10051, "title": "Slate Gray / M", "option1": "Slate Gray", "option2": "M", "price": "29.00", "compare_at_price": "42.00", "sku": "TCE-VW-SG-M", "inventory_quantity": 40, "available": true },
+        { "id": 10052, "title": "Slate Gray / L", "option1": "Slate Gray", "option2": "L", "price": "29.00", "compare_at_price": "42.00", "sku": "TCE-VW-SG-L", "inventory_quantity": 38, "available": true },
+        { "id": 10053, "title": "Faded Purple / M","option1": "Faded Purple","option2": "M","price": "29.00", "compare_at_price": "42.00", "sku": "TCE-VW-FP-M", "inventory_quantity": 27, "available": true }
+      ],
+      "metafields": {
+        "material": "100% garment-dyed organic cotton",
+        "fit": "Boxy / Relaxed",
+        "care": "Machine wash cold, tumble dry low",
+        "reviews_count": 211,
+        "reviews_rating": 4.6
+      }
+    },
+    {
+      "id": 1005,
+      "handle": "organic-henley",
+      "title": "Organic Henley",
+      "vendor": "ThreadCo Organic",
+      "product_type": "Henley",
+      "tags": ["organic", "new", "henley", "spring"],
+      "status": "active",
+      "published_at": "2025-02-01T00:00:00Z",
+      "created_at": "2025-01-15T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "A refined henley cut from ultra-soft organic cotton slub jersey. The 3-button placket adds subtle detail without trying too hard. Perfect for weekends, travel, or anywhere you want to look put-together effortlessly.",
+      "price": "52.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 501, "position": 1, "src": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=600&h=800&fit=crop", "alt": "Organic Henley" }
+      ],
+      "options": [
+        { "id": 9,  "name": "Color", "position": 1, "values": ["Pale Green", "Lime", "Black"] },
+        { "id": 10, "name": "Size",  "position": 2, "values": ["XS", "S", "M", "L", "XL"] }
+      ],
+      "variants": [
+        { "id": 10061, "title": "Pale Green / S", "option1": "Pale Green", "option2": "S", "price": "52.00", "sku": "TCO-HEN-PG-S", "inventory_quantity": 12, "available": true },
+        { "id": 10062, "title": "Pale Green / M", "option1": "Pale Green", "option2": "M", "price": "52.00", "sku": "TCO-HEN-PG-M", "inventory_quantity": 19, "available": true },
+        { "id": 10063, "title": "Black / M",      "option1": "Black",      "option2": "M", "price": "52.00", "sku": "TCO-HEN-BK-M", "inventory_quantity": 14, "available": true }
+      ],
+      "metafields": {
+        "material": "100% organic cotton slub jersey",
+        "fit": "Regular",
+        "care": "Machine wash cold, tumble dry low",
+        "reviews_count": 23,
+        "reviews_rating": 5.0
+      }
+    },
+    {
+      "id": 1006,
+      "handle": "band-style-graphic-tee",
+      "title": "Band-Style Graphic Tee",
+      "vendor": "ThreadCo Graphic",
+      "product_type": "T-Shirt",
+      "tags": ["graphic", "new", "vintage-print", "band"],
+      "status": "active",
+      "published_at": "2025-02-15T00:00:00Z",
+      "created_at": "2025-01-20T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "Inspired by vintage concert merch. Screen-printed with water-based inks on a heavyweight 220gsm organic cotton tee. Slightly oversized for that authentic worn-in feel.",
+      "price": "38.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 601, "position": 1, "src": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=600&h=800&fit=crop", "alt": "Band-Style Graphic Tee" }
+      ],
+      "options": [
+        { "id": 11, "name": "Color", "position": 1, "values": ["Black", "Deep Red"] },
+        { "id": 12, "name": "Size",  "position": 2, "values": ["S", "M", "L", "XL", "XXL"] }
+      ],
+      "variants": [
+        { "id": 10071, "title": "Black / M",    "option1": "Black",    "option2": "M",  "price": "38.00", "sku": "TCG-BND-BK-M",  "inventory_quantity": 31, "available": true },
+        { "id": 10072, "title": "Black / L",    "option1": "Black",    "option2": "L",  "price": "38.00", "sku": "TCG-BND-BK-L",  "inventory_quantity": 28, "available": true },
+        { "id": 10073, "title": "Deep Red / M", "option1": "Deep Red", "option2": "M",  "price": "38.00", "sku": "TCG-BND-DR-M",  "inventory_quantity": 20, "available": true }
+      ],
+      "metafields": {
+        "material": "100% organic cotton, 220gsm",
+        "print": "Water-based screen print",
+        "fit": "Oversized",
+        "care": "Machine wash cold, inside out",
+        "reviews_count": 47,
+        "reviews_rating": 4.9
+      }
+    },
+    {
+      "id": 1007,
+      "handle": "resort-camp-shirt",
+      "title": "Resort Camp Shirt",
+      "vendor": "ThreadCo Premium",
+      "product_type": "Camp Shirt",
+      "tags": ["premium", "new", "camp-collar", "summer", "resort"],
+      "status": "active",
+      "published_at": "2025-02-20T00:00:00Z",
+      "created_at": "2025-01-25T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "A relaxed camp-collar shirt in a lightweight woven fabric with a subtle texture. Cut for a breezy, easy fit — wear it open as a layer or buttoned up. The perfect shirt for warm-weather getaways.",
+      "price": "72.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 701, "position": 1, "src": "https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?w=600&h=800&fit=crop", "alt": "Resort Camp Shirt" }
+      ],
+      "options": [
+        { "id": 13, "name": "Color", "position": 1, "values": ["Pale Yellow", "Sky Blue", "Mint Green"] },
+        { "id": 14, "name": "Size",  "position": 2, "values": ["S", "M", "L", "XL"] }
+      ],
+      "variants": [
+        { "id": 10081, "title": "Pale Yellow / M", "option1": "Pale Yellow", "option2": "M", "price": "72.00", "sku": "TCP-CMP-PY-M", "inventory_quantity": 16, "available": true },
+        { "id": 10082, "title": "Sky Blue / M",    "option1": "Sky Blue",    "option2": "M", "price": "72.00", "sku": "TCP-CMP-SB-M", "inventory_quantity": 14, "available": true }
+      ],
+      "metafields": {
+        "material": "55% linen, 45% organic cotton",
+        "fit": "Relaxed",
+        "care": "Machine wash cold, line dry",
+        "reviews_count": 19,
+        "reviews_rating": 4.8
+      }
+    },
+    {
+      "id": 1008,
+      "handle": "merino-wool-polo",
+      "title": "Merino Wool Polo",
+      "vendor": "ThreadCo Premium",
+      "product_type": "Polo",
+      "tags": ["premium", "new", "merino", "polo", "smart-casual"],
+      "status": "active",
+      "published_at": "2025-02-25T00:00:00Z",
+      "created_at": "2025-02-01T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "A premium polo knitted from 18.5-micron Merino wool. Naturally temperature-regulating, odor-resistant, and impossibly soft. The most versatile shirt in your wardrobe — from the office to the weekend.",
+      "price": "95.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 801, "position": 1, "src": "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=800&fit=crop", "alt": "Merino Wool Polo" }
+      ],
+      "options": [
+        { "id": 15, "name": "Color", "position": 1, "values": ["Black", "Navy", "Burgundy"] },
+        { "id": 16, "name": "Size",  "position": 2, "values": ["XS", "S", "M", "L", "XL", "XXL"] }
+      ],
+      "variants": [
+        { "id": 10091, "title": "Black / S", "option1": "Black", "option2": "S", "price": "95.00", "sku": "TCP-POL-BK-S", "inventory_quantity": 10, "available": true },
+        { "id": 10092, "title": "Black / M", "option1": "Black", "option2": "M", "price": "95.00", "sku": "TCP-POL-BK-M", "inventory_quantity": 13, "available": true },
+        { "id": 10093, "title": "Navy / M",  "option1": "Navy",  "option2": "M", "price": "95.00", "sku": "TCP-POL-NV-M", "inventory_quantity": 11, "available": true }
+      ],
+      "metafields": {
+        "material": "100% 18.5-micron Merino wool",
+        "fit": "Slim Regular",
+        "care": "Machine wash cold, wool cycle, lay flat to dry",
+        "reviews_count": 11,
+        "reviews_rating": 5.0
+      }
+    },
+    {
+      "id": 1009,
+      "handle": "striped-crew-tee",
+      "title": "Striped Crew Tee",
+      "vendor": "ThreadCo Essentials",
+      "product_type": "T-Shirt",
+      "tags": ["essentials", "stripe", "breton", "crew-neck"],
+      "status": "active",
+      "published_at": "2024-10-01T00:00:00Z",
+      "created_at": "2024-09-15T00:00:00Z",
+      "updated_at": "2025-03-01T00:00:00Z",
+      "description": "A modern take on the classic Breton stripe. Knitted from ring-spun organic cotton with a slightly substantial 200gsm weight. Timeless, easy, always right.",
+      "price": "44.00",
+      "compare_at_price": null,
+      "currency": "USD",
+      "available": true,
+      "images": [
+        { "id": 901, "position": 1, "src": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=800&fit=crop", "alt": "Striped Crew Tee" }
+      ],
+      "options": [
+        { "id": 17, "name": "Color", "position": 1, "values": ["Navy/White", "Black/White", "Red/White"] },
+        { "id": 18, "name": "Size",  "position": 2, "values": ["XS", "S", "M", "L", "XL"] }
+      ],
+      "variants": [
+        { "id": 10101, "title": "Navy/White / S", "option1": "Navy/White", "option2": "S", "price": "44.00", "sku": "TCE-STR-NW-S", "inventory_quantity": 25, "available": true },
+        { "id": 10102, "title": "Navy/White / M", "option1": "Navy/White", "option2": "M", "price": "44.00", "sku": "TCE-STR-NW-M", "inventory_quantity": 33, "available": true },
+        { "id": 10103, "title": "Navy/White / L", "option1": "Navy/White", "option2": "L", "price": "44.00", "sku": "TCE-STR-NW-L", "inventory_quantity": 28, "available": true }
+      ],
+      "metafields": {
+        "material": "100% ring-spun organic cotton, 200gsm",
+        "fit": "Regular",
+        "care": "Machine wash cold, tumble dry low",
+        "reviews_count": 76,
+        "reviews_rating": 4.5
+      }
+    }
+  ]
+}

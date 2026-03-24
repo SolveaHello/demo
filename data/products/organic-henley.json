@@ -1,0 +1,95 @@
+{
+  "product": {
+    "id": 1005,
+    "handle": "organic-henley",
+    "title": "Organic Henley",
+    "vendor": "ThreadCo Organic",
+    "product_type": "Henley",
+    "tags": [
+      "organic",
+      "new",
+      "henley",
+      "spring"
+    ],
+    "status": "active",
+    "published_at": "2025-02-01T00:00:00Z",
+    "created_at": "2025-01-15T00:00:00Z",
+    "updated_at": "2025-03-01T00:00:00Z",
+    "description": "A refined henley cut from ultra-soft organic cotton slub jersey. The 3-button placket adds subtle detail without trying too hard. Perfect for weekends, travel, or anywhere you want to look put-together effortlessly.",
+    "price": "52.00",
+    "compare_at_price": null,
+    "currency": "USD",
+    "available": true,
+    "images": [
+      {
+        "id": 501,
+        "position": 1,
+        "src": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=600&h=800&fit=crop",
+        "alt": "Organic Henley"
+      }
+    ],
+    "options": [
+      {
+        "id": 9,
+        "name": "Color",
+        "position": 1,
+        "values": [
+          "Pale Green",
+          "Lime",
+          "Black"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Size",
+        "position": 2,
+        "values": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 10061,
+        "title": "Pale Green / S",
+        "option1": "Pale Green",
+        "option2": "S",
+        "price": "52.00",
+        "sku": "TCO-HEN-PG-S",
+        "inventory_quantity": 12,
+        "available": true
+      },
+      {
+        "id": 10062,
+        "title": "Pale Green / M",
+        "option1": "Pale Green",
+        "option2": "M",
+        "price": "52.00",
+        "sku": "TCO-HEN-PG-M",
+        "inventory_quantity": 19,
+        "available": true
+      },
+      {
+        "id": 10063,
+        "title": "Black / M",
+        "option1": "Black",
+        "option2": "M",
+        "price": "52.00",
+        "sku": "TCO-HEN-BK-M",
+        "inventory_quantity": 14,
+        "available": true
+      }
+    ],
+    "metafields": {
+      "material": "100% organic cotton slub jersey",
+      "fit": "Regular",
+      "care": "Machine wash cold, tumble dry low",
+      "reviews_count": 23,
+      "reviews_rating": 5.0
+    }
+  }
+}

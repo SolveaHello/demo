@@ -1,0 +1,85 @@
+{
+  "product": {
+    "id": 1007,
+    "handle": "resort-camp-shirt",
+    "title": "Resort Camp Shirt",
+    "vendor": "ThreadCo Premium",
+    "product_type": "Camp Shirt",
+    "tags": [
+      "premium",
+      "new",
+      "camp-collar",
+      "summer",
+      "resort"
+    ],
+    "status": "active",
+    "published_at": "2025-02-20T00:00:00Z",
+    "created_at": "2025-01-25T00:00:00Z",
+    "updated_at": "2025-03-01T00:00:00Z",
+    "description": "A relaxed camp-collar shirt in a lightweight woven fabric with a subtle texture. Cut for a breezy, easy fit — wear it open as a layer or buttoned up. The perfect shirt for warm-weather getaways.",
+    "price": "72.00",
+    "compare_at_price": null,
+    "currency": "USD",
+    "available": true,
+    "images": [
+      {
+        "id": 701,
+        "position": 1,
+        "src": "https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?w=600&h=800&fit=crop",
+        "alt": "Resort Camp Shirt"
+      }
+    ],
+    "options": [
+      {
+        "id": 13,
+        "name": "Color",
+        "position": 1,
+        "values": [
+          "Pale Yellow",
+          "Sky Blue",
+          "Mint Green"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Size",
+        "position": 2,
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 10081,
+        "title": "Pale Yellow / M",
+        "option1": "Pale Yellow",
+        "option2": "M",
+        "price": "72.00",
+        "sku": "TCP-CMP-PY-M",
+        "inventory_quantity": 16,
+        "available": true
+      },
+      {
+        "id": 10082,
+        "title": "Sky Blue / M",
+        "option1": "Sky Blue",
+        "option2": "M",
+        "price": "72.00",
+        "sku": "TCP-CMP-SB-M",
+        "inventory_quantity": 14,
+        "available": true
+      }
+    ],
+    "metafields": {
+      "material": "55% linen, 45% organic cotton",
+      "fit": "Relaxed",
+      "care": "Machine wash cold, line dry",
+      "reviews_count": 19,
+      "reviews_rating": 4.8
+    }
+  }
+}

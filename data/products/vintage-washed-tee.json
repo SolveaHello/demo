@@ -1,0 +1,100 @@
+{
+  "product": {
+    "id": 1004,
+    "handle": "vintage-washed-tee",
+    "title": "Vintage Washed Tee",
+    "vendor": "ThreadCo Essentials",
+    "product_type": "T-Shirt",
+    "tags": [
+      "essentials",
+      "sale",
+      "vintage",
+      "washed"
+    ],
+    "status": "active",
+    "published_at": "2024-07-01T00:00:00Z",
+    "created_at": "2024-06-10T00:00:00Z",
+    "updated_at": "2025-02-14T00:00:00Z",
+    "description": "Garment-dyed for a broken-in, worn-from-day-one feel. Each tee is individually washed giving subtle tonal variation — no two are exactly alike. Slightly boxy fit.",
+    "price": "29.00",
+    "compare_at_price": "42.00",
+    "currency": "USD",
+    "available": true,
+    "images": [
+      {
+        "id": 401,
+        "position": 1,
+        "src": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=800&fit=crop",
+        "alt": "Vintage Washed Tee"
+      }
+    ],
+    "options": [
+      {
+        "id": 7,
+        "name": "Color",
+        "position": 1,
+        "values": [
+          "Slate Gray",
+          "Faded Purple",
+          "Forest Green",
+          "Rust Brown"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Size",
+        "position": 2,
+        "values": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 10051,
+        "title": "Slate Gray / M",
+        "option1": "Slate Gray",
+        "option2": "M",
+        "price": "29.00",
+        "compare_at_price": "42.00",
+        "sku": "TCE-VW-SG-M",
+        "inventory_quantity": 40,
+        "available": true
+      },
+      {
+        "id": 10052,
+        "title": "Slate Gray / L",
+        "option1": "Slate Gray",
+        "option2": "L",
+        "price": "29.00",
+        "compare_at_price": "42.00",
+        "sku": "TCE-VW-SG-L",
+        "inventory_quantity": 38,
+        "available": true
+      },
+      {
+        "id": 10053,
+        "title": "Faded Purple / M",
+        "option1": "Faded Purple",
+        "option2": "M",
+        "price": "29.00",
+        "compare_at_price": "42.00",
+        "sku": "TCE-VW-FP-M",
+        "inventory_quantity": 27,
+        "available": true
+      }
+    ],
+    "metafields": {
+      "material": "100% garment-dyed organic cotton",
+      "fit": "Boxy / Relaxed",
+      "care": "Machine wash cold, tumble dry low",
+      "reviews_count": 211,
+      "reviews_rating": 4.6
+    }
+  }
+}

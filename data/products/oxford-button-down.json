@@ -1,0 +1,114 @@
+{
+  "product": {
+    "id": 1002,
+    "handle": "oxford-button-down",
+    "title": "Oxford Button-Down",
+    "vendor": "ThreadCo Premium",
+    "product_type": "Shirt",
+    "tags": [
+      "premium",
+      "new",
+      "oxford",
+      "button-down",
+      "formal-casual"
+    ],
+    "status": "active",
+    "published_at": "2025-01-10T00:00:00Z",
+    "created_at": "2024-12-20T00:00:00Z",
+    "updated_at": "2025-03-01T00:00:00Z",
+    "description": "A refined everyday button-down woven from 100% organic Oxford cotton. Structured enough for client meetings, relaxed enough for weekend brunches. Features a button-down collar, single chest pocket, and a clean straight hem.",
+    "price": "68.00",
+    "compare_at_price": null,
+    "currency": "USD",
+    "available": true,
+    "images": [
+      {
+        "id": 201,
+        "position": 1,
+        "src": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=800&fit=crop",
+        "alt": "Oxford Button-Down front"
+      },
+      {
+        "id": 202,
+        "position": 2,
+        "src": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=600&h=800&fit=crop",
+        "alt": "Oxford Button-Down detail"
+      }
+    ],
+    "options": [
+      {
+        "id": 3,
+        "name": "Color",
+        "position": 1,
+        "values": [
+          "White",
+          "Sky Blue",
+          "Sand Yellow"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Size",
+        "position": 2,
+        "values": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 10031,
+        "title": "White / S",
+        "option1": "White",
+        "option2": "S",
+        "price": "68.00",
+        "sku": "TCP-OXF-WT-S",
+        "inventory_quantity": 24,
+        "available": true
+      },
+      {
+        "id": 10032,
+        "title": "White / M",
+        "option1": "White",
+        "option2": "M",
+        "price": "68.00",
+        "sku": "TCP-OXF-WT-M",
+        "inventory_quantity": 31,
+        "available": true
+      },
+      {
+        "id": 10033,
+        "title": "White / L",
+        "option1": "White",
+        "option2": "L",
+        "price": "68.00",
+        "sku": "TCP-OXF-WT-L",
+        "inventory_quantity": 28,
+        "available": true
+      },
+      {
+        "id": 10034,
+        "title": "White / XL",
+        "option1": "White",
+        "option2": "XL",
+        "price": "68.00",
+        "sku": "TCP-OXF-WT-XL",
+        "inventory_quantity": 15,
+        "available": true
+      }
+    ],
+    "metafields": {
+      "material": "100% organic Oxford weave cotton",
+      "fit": "Relaxed",
+      "care": "Machine wash cold, hang dry",
+      "sustainability": "GOTS certified",
+      "reviews_count": 132,
+      "reviews_rating": 4.8
+    }
+  }
+}

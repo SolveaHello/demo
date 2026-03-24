@@ -1,0 +1,94 @@
+{
+  "product": {
+    "id": 1003,
+    "handle": "linen-overshirt",
+    "title": "Linen Overshirt",
+    "vendor": "ThreadCo Premium",
+    "product_type": "Overshirt",
+    "tags": [
+      "premium",
+      "linen",
+      "layering",
+      "summer"
+    ],
+    "status": "active",
+    "published_at": "2024-11-01T00:00:00Z",
+    "created_at": "2024-10-15T00:00:00Z",
+    "updated_at": "2025-03-01T00:00:00Z",
+    "description": "A relaxed, lived-in linen overshirt designed for effortless layering. Crafted from 100% European linen that softens with every wash. Wear it open over a tee or buttoned as a standalone shirt.",
+    "price": "89.00",
+    "compare_at_price": null,
+    "currency": "USD",
+    "available": true,
+    "images": [
+      {
+        "id": 301,
+        "position": 1,
+        "src": "https://images.unsplash.com/photo-1594938298603-c8148c4b4ae3?w=600&h=800&fit=crop",
+        "alt": "Linen Overshirt front"
+      }
+    ],
+    "options": [
+      {
+        "id": 5,
+        "name": "Color",
+        "position": 1,
+        "values": [
+          "Stone Gray",
+          "Warm Brown",
+          "Blush Pink"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Size",
+        "position": 2,
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 10041,
+        "title": "Stone Gray / S",
+        "option1": "Stone Gray",
+        "option2": "S",
+        "price": "89.00",
+        "sku": "TCP-LIN-SG-S",
+        "inventory_quantity": 18,
+        "available": true
+      },
+      {
+        "id": 10042,
+        "title": "Stone Gray / M",
+        "option1": "Stone Gray",
+        "option2": "M",
+        "price": "89.00",
+        "sku": "TCP-LIN-SG-M",
+        "inventory_quantity": 22,
+        "available": true
+      },
+      {
+        "id": 10043,
+        "title": "Stone Gray / L",
+        "option1": "Stone Gray",
+        "option2": "L",
+        "price": "89.00",
+        "sku": "TCP-LIN-SG-L",
+        "inventory_quantity": 19,
+        "available": true
+      }
+    ],
+    "metafields": {
+      "material": "100% European linen",
+      "fit": "Relaxed / Oversized",
+      "care": "Machine wash cold, line dry",
+      "reviews_count": 98,
+      "reviews_rating": 4.7
+    }
+  }
+}
